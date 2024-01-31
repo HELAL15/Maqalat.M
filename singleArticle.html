@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maqalat.M</title>
+
+  <link rel="icon" type="image/x-icon" href="images/fav.png" />
+
+  <!-- font awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/plugin/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/plugin/bootstrap-icons.min.css">
+
+  <!-- IF LANG == EN -->
+  <!-- <link rel="stylesheet" href="css/plugin/bootstrap.min.css"> -->
+  <!-- END IF -->
+
+  <!-- animate link  -->
+  <link rel="stylesheet" href="css/plugin/animate.css" />
+
+  <!-- select link -->
+  <link rel="stylesheet" href="css/plugin/nice-select.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- IF LANG == EN -->
+  <!-- <link rel="stylesheet" href="css/style.ltr.css" /> -->
+  <!-- END IF -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <button class="navbar-toggler btn" id="open_menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class=" navbar-collapse justify-content-end align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler btn" id="close_menu">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">البرمجة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">الرياضة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">الفنون</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">السياسة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">الثقافة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">سيارات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">قصص</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              مقالات اكثر
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">مقال واحد</a></li>
+              <li><a class="dropdown-item" href="#">مقال اتنين</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="search d-flex gap-2">
+          <button class="btn  search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+          <input type="text" class="form-control" placeholder="ابحث عن مقال" />
+        </div>
+      </div>
+      <button class="btn  add-article">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+        <!-- <div class="top-header"> -->
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <!-- </div> -->
+        <a href="index.html" class="logo img">
+          <img src="images/logo.png" alt="website-logo" />
+        </a>
+        <div class="registeration">
+          <a href="login.html" class="btn main-btn">تسجيل الدخول</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <!-- ============= blog =============== -->
+
+
+  <section class="blog single-blog unmargin">
+    <div class="container">
+      <div class="blog-container">
+        <aside class="nav-right d-flex wow fadeInUp align-items-start flex-column">
+          <h2>مواضيع المقال</h2>
+          <div class="links d-flex flex-column">
+            <a href="#section1" class=" nav-link active"><i class="fa-solid fa-caret-left"></i><span>المقدمة</span></a>
+            <a href="#section2" class=" nav-link"><i class="fa-solid fa-caret-left"></i><span>المقدمة</span></a>
+            <a href="#section3" class=" nav-link"><i class="fa-solid fa-caret-left"></i><span>المقدمة</span></a>
+            <a href="#section4" class=" nav-link"><i class="fa-solid fa-caret-left"></i><span>المقدمة</span></a>
+          </div>
+        </aside>
+        <main class="main d-flex wow fadeInUp align-items-center flex-column">
+          <div class="about-article">
+            <h3>اسم المقال</h3>
+            <div class="img">
+              <img src="images/pic3.jpeg" alt="">
+            </div>
+            <div class="card-header">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2023</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>5 تعليقات</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>5 مرات مشاهدة</span>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="section1">
+            <h3>المقدمة</h3>
+            <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية وعند موافقه العميل المبدئيه
+              على
+              التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص
+              التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا
+              النص
+              من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل
+              المشاهد عن وضع الكثير المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع
+              اوعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض
+              ان
+              وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير لكثيروعند موافقه العميل المبدئيه على التصميم
+              يتم
+              ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية
+              بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
+              التصميم
+              ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن
+              وضع الكثير</p>
+          </div>
+          <div class="advertise">
+            <img src="images/megaphone.svg" alt="">
+            <h4>مساحه اعلانيه</h4>
+          </div>
+          <div class="content" id="section2">
+            <h3>المقدمة</h3>
+            <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية وعند موافقه العميل المبدئيه
+              على
+              التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص
+              التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا
+              النص
+              من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل
+              المشاهد عن وضع الكثير المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع
+              اوعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض
+              ان
+              وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير لكثيروعند موافقه العميل المبدئيه على التصميم
+              يتم
+              ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية
+              بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
+              التصميم
+              ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن
+              وضع الكثير</p>
+          </div>
+          <div class="about-article">
+            <div class="img">
+              <img src="images/pic3.jpeg" alt="">
+            </div>
+          </div>
+          <div class="content" id="section3">
+            <h3>المقدمة</h3>
+            <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية وعند موافقه العميل المبدئيه
+              على
+              التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص
+              التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا
+              النص
+              من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل
+              المشاهد عن وضع الكثير المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع
+              اوعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض
+              ان
+              وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير لكثيروعند موافقه العميل المبدئيه على التصميم
+              يتم
+              ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية
+              بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
+              التصميم
+              ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن
+              وضع الكثير</p>
+          </div>
+          <div class="content" id="section4">
+            <h3>المقدمة</h3>
+            <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية وعند موافقه العميل المبدئيه
+              على
+              التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص
+              التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا
+              النص
+              من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل
+              المشاهد عن وضع الكثير المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع
+              اوعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+              للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+              المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض
+              ان
+              وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير لكثيروعند موافقه العميل المبدئيه على التصميم
+              يتم
+              ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية
+              بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
+              التصميم
+              ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن
+              وضع الكثير</p>
+          </div>
+        </main>
+        <aside class="nav-left d-flex wow fadeInUp align-items-end flex-column">
+          <div class="row gy-4">
+            <div class="col-md-12 d-flex align-items-center  justify-content-center ">
+              <div class="advertise text-center">
+                <img src="images/megaphone.svg" alt="">
+                <h4>مساحه اعلانيه</h4>
+              </div>
+            </div>
+            <div class="col-md-12 d-flex align-items-center  justify-content-center ">
+              <div class="advertise text-center">
+                <img src="images/megaphone.svg" alt="">
+                <h4>مساحه اعلانيه</h4>
+              </div>
+            </div>
+            <div class="col-md-12 d-flex align-items-center  justify-content-center ">
+              <div class="advertise text-center">
+                <img src="images/megaphone.svg" alt="">
+                <h4>مساحه اعلانيه</h4>
+              </div>
+            </div>
+            <div class="col-md-12 d-flex align-items-center  justify-content-center ">
+              <div class="advertise text-center">
+                <img src="images/megaphone.svg" alt="">
+                <h4>مساحه اعلانيه</h4>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============= comments ============= -->
+
+
+  <section class="comment wow fadeInUp">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-9">
+          <div class="card wow fadeInUp">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <!-- <div class="d-flex justify-content-between align-items-center"> -->
+              <div class="user">
+                <div class="img">
+                  <img src="images/user.png" alt="user image">
+                </div>
+                <span>اسم المستخدم</span>
+              </div>
+              <div class="time">
+                <i class="fa-regular fa-clock"></i>
+                <span>منذ 5 دقائق</span>
+              </div>
+              <!-- </div> -->
+            </div>
+            <div class="card-body">
+              <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                على الشكل الخارجي
+                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card wow fadeInUp">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <!-- <div class="d-flex justify-content-between align-items-center"> -->
+              <div class="user">
+                <div class="img">
+                  <img src="images/user.png" alt="user image">
+                </div>
+                <span>اسم المستخدم</span>
+              </div>
+              <div class="time">
+                <i class="fa-regular fa-clock"></i>
+                <span>منذ 5 دقائق</span>
+              </div>
+              <!-- </div> -->
+            </div>
+            <div class="card-body">
+              <p class="card-text">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز
+                على الشكل الخارجي
+                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 wow fadeInUp">
+          <textarea name="" class="form-control" id="" cols="30" rows="4"></textarea>
+        </div>
+        <div class="col-md-9 wow fadeInUp">
+          <button class="btn main-btn">ارسال</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- ============= similar article ============== -->
+
+  <section class="blog">
+    <div class="container">
+      <div class="  mb-5">
+        <h2 class="sec-title">مقالات ذات صلة</h2>
+      </div>
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card wow fadeInUp">
+            <a href="single-blog.html" class="link"></a>
+            <div class="img">
+              <img class="card-img-top card-img" src="images/pic4.jpg" alt="Card image cap">
+            </div>
+            <div class="card-header">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2023</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>5 تعليقات</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>5 مرات مشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">اسم المقال</h5>
+              <p class="card-text">وعند
+                موافقه العميل المبدئيه
+                على
+                التصميم
+                يتم ازالة
+                هذا النص من التصميم ويتم وضع النصوص
+                النهائية </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card wow fadeInUp">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="img">
+              <img class="card-img-top card-img" src="images/pic5.jpg" alt="Card image cap">
+            </div>
+            <div class="card-header">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2023</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>5 تعليقات</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>5 مرات مشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">اسم المقال</h5>
+              <p class="card-text">وعند
+                موافقه العميل المبدئيه
+                على
+                التصميم
+                يتم ازالة
+                هذا النص من التصميم ويتم وضع النصوص
+                النهائية </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card wow fadeInUp">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="img">
+              <img class="card-img-top card-img" src="images/pic6.jpg" alt="Card image cap">
+            </div>
+            <div class="card-header">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2023</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>5 تعليقات</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>5 مرات مشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">اسم المقال</h5>
+              <p class="card-text">وعند
+                موافقه العميل المبدئيه
+                على
+                التصميم
+                يتم ازالة
+                هذا النص من التصميم ويتم وضع النصوص
+                النهائية </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- ============ footer ============ -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container g-5 gy-4 mt-4 ">
+        <div class="footer-item item-1">
+          <h4 class="sec-title mb-4">خريطة الموقع</h4>
+          <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+            <a href="#" class="footer-link">الرئيسية</a>
+            <a href="#" class="footer-link">سياسة الخصوصية</a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+            <a href="#" class="footer-link">المقالات</a>
+            <a href="#" class="footer-link">المساعدة</a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+            <a href="#" class="footer-link">الشروط والأحكام</a>
+          </div>
+        </div>
+        <div class="footer-item item-2">
+          <div class="d-flex flex-column  gap-4">
+            <div class="logo m-auto">
+              <img src="images/logo.png" alt="website-logo">
+            </div>
+            <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة
+            </p>
+            <form action="" class="form">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="اشترك">
+                <button class="btn"><i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-item item-3">
+          <h4 class="sec-title mb-4">معلومات التواصل</h4>
+          <div class="d-flex gap-4 flex-column ">
+            <a href="mailto:1ahmedhelal1@gmail.com" class="email">
+              <i class="fas fa-envelope"></i>
+              <span>1ahmedhelal1@gmail.com</span>
+            </a>
+            <a href="tel:+201222810589" class="mobile">
+              <i class="fas fa-phone"></i>
+              <span>+201222810589</span>
+            </a>
+            <div class="social justify-content-start">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="rights my-3">
+    <div class="container">
+      <div class="line-break"></div>
+      <div class="d-flex align-items-center justify-content-center gap-4">
+        <p>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</p>
+        <div class="rights-logo">
+          <img src="images/smart-logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- jQuery script -->
+  <script src="js/plugin/jquery-3.6.0.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/plugin/bootstrap.bundle.min.js"></script>
+
+  <!-- wow script -->
+  <script src="js/plugin/wow.min.js"></script>
+
+  <!-- select script  -->
+  <script src="js/plugin//jquery.nice-select.min.js"></script>
+
+
+  <!-- custom script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

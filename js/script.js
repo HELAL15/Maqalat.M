@@ -16,8 +16,8 @@ btn.addEventListener('click' , ()=>{search.classList.toggle('active')})
 
 
 // ==== navbar toggler ======
-let open_nav = $('#open');
-let close_nav = $('#close');
+let open_nav = $('#open_menu');
+let close_nav = $('#close_menu');
 let nav = $('.navbar-collapse')
 
 open_nav.click(function () {

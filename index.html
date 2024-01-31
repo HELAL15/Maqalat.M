@@ -40,13 +40,21 @@
 
   <nav class="navbar navbar-expand-lg ">
     <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler btn" id="open_menu">
+        <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+
+      <div class=" navbar-collapse justify-content-end align-items-center">
+        <div class="top justify-content-between align-items-center">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler btn" id="close_menu">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item active">
             <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
           </li>
           <li class="nav-item">
@@ -79,27 +87,958 @@
               <li><a class="dropdown-item" href="#">مقال اتنين</a></li>
             </ul>
           </li>
-          <li>
-            <div class="search d-flex gap-2">
-              <button class="btn  search-btn">
-                <div class="fas fa-search"></div>
-              </button>
-              <input type="text" class="form-control" placeholder="ابحث عن مقال" />
-            </div>
-          </li>
         </ul>
+        <div class="search d-flex gap-2">
+          <button class="btn  search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+          <input type="text" class="form-control" placeholder="ابحث عن مقال" />
+        </div>
       </div>
-      <button class="btn main-btn add-article">
-        <div class="fas fa-plus"></div>
+      <button class="btn  add-article">
+        <i class="fas fa-plus"></i>
       </button>
     </div>
   </nav>
-  <header class="header"></header>
-  <section class="latest"></section>
-  <section class="suggest"></section>
-  <section class="trend"></section>
-  <footer class="footer"></footer>
-  <section class="rights"></section>
+  <header class="header">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+        <!-- <div class="top-header"> -->
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <!-- </div> -->
+        <div class="logo img">
+          <img src="images/logo.png" alt="website-logo" />
+        </div>
+        <div class="registeration">
+          <a href="login.html" class="btn main-btn">تسجيل الدخول</a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <div class="overlay">
+                <h5 class="text">تصميم موقع لعرض الصور</h5>
+              </div>
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <div class="overlay"></div>
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <div class="overlay"></div>
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="latest">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12">
+          <div class="d-flex align-items-center mb-3">
+            <h4 class="sec-title">آخر المقالات</h4>
+            <ul class="nav nav-pills " id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-art-tab" data-bs-toggle="pill" data-bs-target="#pills-art"
+                  type="button" role="tab" aria-controls="pills-art" aria-selected="true">الفنون</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-culture-tab" data-bs-toggle="pill" data-bs-target="#pills-culture"
+                  type="button" role="tab" aria-controls="pills-culture" aria-selected="false">الثقافة</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-sport-tab" data-bs-toggle="pill" data-bs-target="#pills-sport"
+                  type="button" role="tab" aria-controls="pills-sport" aria-selected="false">الرياضة</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-programming-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-programming" type="button" role="tab" aria-controls="pills-programming"
+                  aria-selected="false">برمجة</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-policy-tab" data-bs-toggle="pill" data-bs-target="#pills-policy"
+                  type="button" role="tab" aria-controls="pills-policy" aria-selected="false">سياسة</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-art" role="tabpanel" aria-labelledby="pills-art-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-culture" role="tabpanel" aria-labelledby="pills-culture-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-sport" role="tabpanel" aria-labelledby="pills-sport-tab" tabindex="0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-programming" role="tabpanel" aria-labelledby="pills-programming-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-policy" role="tabpanel" aria-labelledby="pills-policy-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <a href="singleArticle.html" class="link"></a>
+                    <div class="card-img">
+                      <img class="" src="images/pic1.jpg" alt="">
+                    </div>
+                    <div class="card-header ">
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span>15 مايو 2022</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>15 تعليق</span>
+                      </div>
+                      <div class="card-header-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>15 مرات المشاهدة</span>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                      <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                        وضع النصوص
+                        النهائية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <h4 class="sec-title mb-3">عن موقعنا</h4>
+          <div class="card">
+            <div class="card-img">
+              <img src="images/pic3.jpeg" alt="">
+            </div>
+            <div class="card-body">
+              <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+                للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير وعند موافقه العميل
+                المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية وعند موافقه العميل المبدئيه
+                على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="suggest py-4">
+    <div class="container">
+      <div class="top-header d-flex justify-content-between align-items-center gap-3 my-4">
+        <h4 class="sec-title">مقترحات</h4>
+        <span class="line-break"></span>
+        <a href="#" class="more-link">المزيد</a>
+      </div>
+      <div class="row gy-4 mt-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trend">
+    <div class="container">
+      <div class="top-header d-flex justify-content-between align-items-center gap-3 my-4">
+        <h4 class="sec-title">الرائج</h4>
+        <div class="line-break"></div>
+        <a href="#" class="more-link">المزيد</a>
+      </div>
+      <div class="row gy-4 mt-4">
+        <div class="col-lg-8 col-md-12">
+          <div class="row gy-4">
+            <div class="col-md-12">
+              <div class="card">
+                <a href="singleArticle.html" class="link"></a>
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="card-img">
+                      <img src="images/pic5.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-leftSide">
+                      <div class="card-header ">
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-calendar"></i>
+                          <span>15 مايو 2022</span>
+                        </div>
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-comments"></i>
+                          <span>15 تعليق</span>
+                        </div>
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>15 مرات المشاهدة</span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                        <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                          وضع النصوص
+                          النهائية</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card">
+                <a href="singleArticle.html" class="link"></a>
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="card-img">
+                      <img src="images/pic5.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-leftSide">
+                      <div class="card-header ">
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-calendar"></i>
+                          <span>15 مايو 2022</span>
+                        </div>
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-comments"></i>
+                          <span>15 تعليق</span>
+                        </div>
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>15 مرات المشاهدة</span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                        <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                          وضع النصوص
+                          النهائية</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card">
+                <a href="singleArticle.html" class="link"></a>
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="card-img">
+                      <img src="images/pic5.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-leftSide">
+                      <div class="card-header ">
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-calendar"></i>
+                          <span>15 مايو 2022</span>
+                        </div>
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-comments"></i>
+                          <span>15 تعليق</span>
+                        </div>
+                        <div class="card-header-item">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>15 مرات المشاهدة</span>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                        <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                          وضع النصوص
+                          النهائية</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="row gy-4 advertieses">
+            <div class="col-lg-12 col-md-4 item">
+              <div class="advertise text-center">
+                <img src="images/megaphone.svg" alt="">
+                <h4>مساحه اعلانيه</h4>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-4 item">
+              <div class="advertise text-center">
+                <img src="images/megaphone.svg" alt="">
+                <h4>مساحه اعلانيه</h4>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-4 item">
+              <div class="advertise text-center">
+                <img src="images/megaphone.svg" alt="">
+                <h4>مساحه اعلانيه</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container g-5 gy-4 mt-4 ">
+        <div class="footer-item item-1">
+          <h4 class="sec-title mb-4">خريطة الموقع</h4>
+          <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+            <a href="#" class="footer-link">الرئيسية</a>
+            <a href="#" class="footer-link">سياسة الخصوصية</a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+            <a href="#" class="footer-link">المقالات</a>
+            <a href="#" class="footer-link">المساعدة</a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
+            <a href="#" class="footer-link">الشروط والأحكام</a>
+          </div>
+        </div>
+        <div class="footer-item item-2">
+          <div class="d-flex flex-column  gap-4">
+            <div class="logo m-auto">
+              <img src="images/logo.png" alt="website-logo">
+            </div>
+            <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص
+              النهائية المطلوبة
+            </p>
+            <form action="" class="form">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="اشترك">
+                <button class="btn"><i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer-item item-3">
+          <h4 class="sec-title mb-4">معلومات التواصل</h4>
+          <div class="d-flex gap-4 flex-column ">
+            <a href="mailto:1ahmedhelal1@gmail.com" class="email">
+              <i class="fas fa-envelope"></i>
+              <span>1ahmedhelal1@gmail.com</span>
+            </a>
+            <a href="tel:+201222810589" class="mobile">
+              <i class="fas fa-phone"></i>
+              <span>+201222810589</span>
+            </a>
+            <div class="social justify-content-start">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="rights my-3">
+    <div class="container">
+      <div class="line-break"></div>
+      <div class="d-flex align-items-center justify-content-center gap-4">
+        <p>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</p>
+        <div class="rights-logo">
+          <img src="images/smart-logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- jQuery script -->
