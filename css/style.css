@@ -994,7 +994,7 @@ footer .item-2 p{
  .navbar-collapse .top{
   display: none !important;
 }
-
+/*================================*/
 @media(max-width: 991px){
   .nav-item.active a.nav-link::before ,.nav-item:hover a.nav-link::before {
     width: 20%;
