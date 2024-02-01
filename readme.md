@@ -1,4 +1,4 @@
-# Meals Plan
+# Maqalat.M
 
 link of repo => https://github.com/HELAL15/Maqalat.M
 

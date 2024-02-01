@@ -287,8 +287,26 @@ body{
   color: var(--white) !important;
   background: var(--main) !important;
 }
+.main-btn.px{
+  padding: .6rem 5rem;
+}
 .main-btn.primary {
-  background: var(--primary) !important;
+  background: transparent !important;
+  padding: .3rem 1rem;
+color: var(--main) !important;
+font-size: 1.2rem;
+border-color: var(--main) !important;
+}
+.round-btn{
+  border-radius: 50%;
+  color: var(--main) !important;
+  border-color: var(--main);
+  transition: .3s;
+  font-size: 1.2rem;
+}
+.round-btn:hover{
+  background-color: var(--main) !important;
+  color: var(--white) !important;
 }
 .form-control{
   border-radius: 6px !important;
@@ -1012,7 +1030,7 @@ footer .item-2 p{
   display: flex;
 }
 
-.type_article .type_nav .nice-select .list{
+ .nice-select .list{
   width: 100%;
 }
 
@@ -1022,6 +1040,10 @@ footer .item-2 p{
   border-radius: 6px;
   padding: .1rem .5rem;
   width: 250px !important;
+  display: flex;
+}
+.nice-select{
+  border-radius: 6px !important;
   display: flex;
 }
 .nice-select:after {
@@ -1049,6 +1071,146 @@ footer .item-2 p{
   width: 100%;
 }
 
+/*==================================================
+=================== add article ====================
+===================================================*/
+
+.add_article .sec-title .name {
+  color: var(--p);
+  -webkit-margin-start: .5rem;
+          margin-inline-start: .5rem;
+}
+
+.main-article{
+  background-color: var(--light-main);
+  padding: .8rem 0;
+}
+.main-article .sec-title{
+  color: var(--white);
+}
+
+
+.article-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+ .profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 6px;
+  position: relative;
+  border: 1px solid var(--grey);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+
+.profile-photo input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.notification i{
+  position: relative;
+}
+.notification i .count{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--main);
+  color: var(--white);
+  font-size: .5rem;
+  padding: .2rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+/*=====================================================
+======================= profile ======================
+======================================================*/
+
+.profile_nav .item_nav{
+  background-color: var(--grey);
+  padding: 1.3rem 2.5rem;
+  border-radius: 12px;
+  transition: .3s;
+}
+.profile_nav .item_nav:hover ,.profile_nav .item_nav.active{
+  background-color: var(--main);
+  color: var(--white) !important;
+}
+
+.profile_nav .navbar_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.profile_posts .round-btn{
+  z-index: 4;
+}
+
+
+
+
+/*==========================================
+============== policies ====================
+===========================================*/
+
+.policies p , .terms p{
+  color: var(--p);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.term{
+  margin-bottom: 1.2rem;
+}
+
+.term .title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-right: 1.5rem;
+}
+.term .title::after{
+  content: '';
+  position: absolute;
+  width: 1.2rem;
+  height: 3px;
+  background-color: var(--main);
+  border-radius: 2px;
+  right: -1.5rem;
+  top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1059,6 +1221,12 @@ footer .item-2 p{
 }
 /*================================*/
 @media(max-width: 991px){
+  .profile_nav .item_nav{
+    padding: 1.1rem 2rem;
+  }
+  .profile_nav .navbar_profile {
+    gap: 1.5rem;
+  }
   .nav-item.active a.nav-link::before ,.nav-item:hover a.nav-link::before {
     width: 20%;
     left: unset;
@@ -1149,6 +1317,14 @@ footer .footer-container .footer-item{
 
 
 @media(max-width: 625px){
+  .profile_nav .item_nav {
+    padding: 1.1rem 1.1rem;
+}
+  .profile_nav .navbar_profile {
+    justify-content: space-around;
+    gap: .8rem;
+  }
+  
   .type_article .type_nav{
     gap: 1rem;
   }

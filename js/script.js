@@ -33,53 +33,26 @@ $(document).on('click' , (e)=>{
 })
 
 
-/*================ payment page =================*/
-
-$(document).ready(function () {
-  let online_chose = $('.method'); 
-  let pay_form = $('.pay-form');
-  let cash_form = $('.cash-pay');
-  cash_form.hide();
-  online_chose.on('change', function () {
-    if (this.value === 'online-pay' && this.checked) {
-      pay_form.show(500);
-      cash_form.hide(500);
-    }else if(this.value === 'cash' && this.checked){
-      cash_form.show(100);
-      pay_form.hide(500);
-    }
-  });
-});
-
 
 ////////////////////// profile photo change ///////////////////////////
 
-let profile_photo = document.getElementById('profile-photo');
-let photo = document.getElementById('photo');
-let file = document.getElementById('file');
-let camera_btn = document.getElementById('camera')
-let confirm_btn = document.getElementById('accept')
 
-if( file !=null){
+let files = $('.file');
+let photos = $('.photo');
 
-  file.onchange = ()=>{
-    confirm_btn.style.display = 'flex';
-    let choosedFile = file.files[0];
-    if(choosedFile){
-      let reader = new FileReader();
-      reader.onload = ()=>{
-        photo.setAttribute('src' , reader.result);
+if (files.length > 0) {
+  files.each((index, file) => {
+    $(file).change(() => {
+      let choosedFile = file.files[0];
+      if (choosedFile) {
+        let reader = new FileReader();
+        reader.onload = () => {
+          photos.eq(index).attr('src', reader.result);
+        };
+        reader.readAsDataURL(choosedFile);
       }
-      reader.readAsDataURL(choosedFile);
-    }
-  }
-}
-
-if(file != null){
-  camera_btn.onclick = ()=>{
-    file.click();
-  }
-
+    });
+  });
 }
 
 /* ============ single=blog page ============= */
@@ -162,56 +135,7 @@ const inputElements = [...document.querySelectorAll('input.code')]
       console.log(code)
     }
 
-/* ===================== packages price =========================*/
-// var check_input = $('.term .form-check .form-check-input');
-// $('.term .form-check .form-check-input').on('change', function() {
-//   var selectedValue = $(this).val();
-//   console.log(selectedValue);
-// });
 
-var options = $('#select-kind .option');
-var selects = $('#select-kind');
-var quarterOut = $('.quarterOut');
-var halfOut = $('.halfOut');
-var fullOut = $('.fullOut');
-
-
-
-function handelPrice() {
-  var quarter = $('#select-kind option:selected').attr('quarter');
-  quarterOut.html(quarter);
-  var half = $('#select-kind option:selected').attr('half');
-  halfOut.html(half);
-  var full = $('#select-kind option:selected').attr('full');
-  fullOut.html(full);
-
-  console.log(quarter);
-  console.log(half);
-  console.log(full);
-}
-
-handelPrice();
-
-selects.on('change', () => {
-  handelPrice()
-});
-
-
-
-// const fruit = ['apple' ,'mango' , 'orange' , 'pineapple'];
-
-// let result = '';
-
-// // for(let one of fruit){
-// //   result += `${one} <br>`
-// // }
-
-
-// fruit.map((f)=>{
-//   result += `${f} <br>`
-// })
-
-// document.getElementById('x').innerHTML = result;
 
 
 // loader

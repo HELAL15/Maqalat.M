@@ -54,11 +54,11 @@
           </button>
         </div>
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item ">
-            <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+          <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="programming.html">البرمجة</a>
+          <li class="nav-item">
+            <a class="nav-link" href="programming.html">البرمجة</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="sport.html">الرياضة</a>
@@ -119,109 +119,121 @@
     </div>
   </header>
 
-
-  <main>
-    <section class="add_article unmargin my-5">
-      <div class="container mt-4">
-        <h4 class="sec-title"><span>موقع مقالات</span> <span class="name">لإضافة مقالك</span></h4>
-      </div>
-      <div class="main-article my-3">
-        <div class="container">
-          <h5 class="sec-title">المقال الرئيسي</h5>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="select_category" class="form-label">اختار القسم</label>
-              <select id="select_category" class="w-100">
-                <option data-display="اختر">اختر</option>
-                <option value="1">واحد</option>
-                <option value="2">اتنين</option>
-                <option value="3">تلاتة</option>
-                <option value="4">اربعه</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="title" class="form-label w-100">إضافة عنوان للمقال</label>
-              <input type="text" id="title" class="form-control" placeholder="إضافة عنوان للمقال">
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="article" class="form-label w-100">إضافة المقال</label>
-              <textarea rows="8" type="text" id="article" class="form-control" placeholder="إضافة المقال"></textarea>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="desc" class="form-label w-100">إضافة وصف للمقال</label>
-              <input type="text" id="desc" class="form-control" placeholder="إضافة وصف للمقال">
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="sup-words" class="form-label w-100">الكلمات الدلالية</label>
-              <input type="text" id="sup-words" class="form-control" placeholder="الكلمات الدلالية">
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="file" class="form-label w-100">إضافة صورة للمقال</label>
-              <div class="profile-photo ">
-                <img src="images/chose-img.png" class="photo" alt="">
-                <input type="file" class="file" accept="image/*" id="file1">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sub-article">
-      <div class="main-article my-3">
-        <div class="container">
-          <h5 class="sec-title">المقال الفرعي</h5>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="title" class="form-label w-100">إضافة عنوان للمقال</label>
-              <input type="text" id="title" class="form-control" placeholder="إضافة عنوان للمقال">
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="desc" class="form-label w-100">إضافة وصف للمقال</label>
-              <textarea rows="8" type="text" id="article" class="form-control" placeholder="إضافة المقال"></textarea>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="input-group w-100">
-              <label for="file1" class="form-label w-100">إضافة صورة للمقال</label>
-              <div class="profile-photo ">
-                <img src="images/chose-img.png" class="photo" alt="">
-                <input type="file" class="file" accept="image/*" id="file1">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <div class="d-flex align-items-center gap-4 mt-4">
-        <button class="btn main-btn primary"><i class="fas fa-plus"></i></button>
-        <button class="btn main-btn px">نشر</button>
+  <section class="profile_nav unmargin">
+    <div class="container mt-4">
+      <div class="navbar_profile">
+        <a href="profile.html" class="item_nav ">المعلومات الشخصية</a>
+        <a href="postedArticles.html" class="item_nav ">المقالات المنشورة</a>
+        <a href="pendingArticles.html" class="item_nav active">المنشورات المعلقة</a>
       </div>
     </div>
-  </main>
+  </section>
 
-
+  <section class="profile_posts unmargin">
+    <div class="container">
+      <div class="row gy-4 mt-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                <a href="addArticle.html" class="btn round-btn">
+                  <i class="fas fa-pen"></i>
+                </a>
+              </div>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                <a href="addArticle.html" class="btn round-btn">
+                  <i class="fas fa-pen"></i>
+                </a>
+              </div>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <a href="singleArticle.html" class="link"></a>
+            <div class="card-img">
+              <img class="" src="images/pic1.jpg" alt="">
+            </div>
+            <div class="card-header ">
+              <div class="card-header-item">
+                <i class="fa-solid fa-calendar"></i>
+                <span>15 مايو 2022</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>15 تعليق</span>
+              </div>
+              <div class="card-header-item">
+                <i class="fa-solid fa-eye"></i>
+                <span>15 مرات المشاهدة</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="card-title">تصميم موقع لعرض الصور</h3>
+                <a href="addArticle.html" class="btn round-btn">
+                  <i class="fas fa-pen"></i>
+                </a>
+              </div>
+              <p class="card-text">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم
+                وضع النصوص
+                النهائية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer my-5">
     <div class="container">
