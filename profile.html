@@ -130,24 +130,52 @@
   </section>
 
   <section class="personal_information unmargin">
-    <div class="container mt-4">
-      <div class="row">
+    <div class="container my-5">
+      <div class="row gy-4 align-items-center">
         <div class="col-md-4">
           <div class="main">
             <div class="profile-photo " id="profile-photo">
-              <img src="images/user.png" alt="" class="photo" id="">
-              <input type="file" class="file" accept="image/*" id="">
-              <i class="fa-solid fa-camera camera" id="camera"></i>
+              <img src="images/user.png" alt="" class="photo" id="photo">
+              <input type="file" class="file form-control" accept="image/*" id="file">
+              <div class="add-img " id="camera">
+                <i class="fa-solid fa-camera camera"></i>
+              </div>
               <button class="fa-solid fa-check accept" id="accept"></button>
             </div>
             <div class="user-details">
-              <h3 class="name">USERNAME</h3>
+              <h5 class="name">USERNAME</h5>
               <p class="email">admin@gmail.com</p>
             </div>
           </div>
 
         </div>
-        <div class="col-md-8"></div>
+        <div class="col-md-8">
+          <form action="" class="form">
+            <div class="row gy-4">
+              <h5 class="sec-title">المعلومات الشخصية</h5>
+              <div class="col-md-8">
+                <div class="input-group">
+                  <label for="name" class="form-label w-100">اسم المستخدم</label>
+                  <input type="text" class="form-control" id="name" placeholder="اسم المستخدم">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="input-group">
+                  <label for="email" class="form-label w-100">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h6 class="sec-title mb-3">الإشعارات</h6>
+                <div class="form-check form-switch d-flex justify-content-between align-items-center ">
+                  <label class="form-check-label" for="flexSwitchCheckChecked">أرغب في تلقي الرسائل الإخبارية والعروض
+                    الترويجية والأخبار</label>
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -159,15 +187,15 @@
         <div class="footer-item item-1">
           <h4 class="sec-title mb-4">خريطة الموقع</h4>
           <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
-            <a href="#" class="footer-link">الرئيسية</a>
-            <a href="#" class="footer-link">سياسة الخصوصية</a>
+            <a href="index.html" class="footer-link">الرئيسية</a>
+            <a href="policies.html" class="footer-link">سياسة الخصوصية</a>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
-            <a href="#" class="footer-link">المقالات</a>
-            <a href="#" class="footer-link">المساعدة</a>
+            <a href="moreArticles.html" class="footer-link">المقالات</a>
+            <a href="help.html" class="footer-link">المساعدة</a>
           </div>
           <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
-            <a href="#" class="footer-link">الشروط والأحكام</a>
+            <a href="terms.html" class="footer-link">الشروط والأحكام</a>
           </div>
         </div>
         <div class="footer-item item-2">

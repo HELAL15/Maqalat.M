@@ -1166,8 +1166,136 @@ footer .item-2 p{
   z-index: 4;
 }
 
+.personal_information .profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid var(--grey);
+  margin-bottom: 1.5rem;
+}
+.personal_information .main{
+  position: relative;
+}
+.personal_information .main .add-img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000054;
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 222;
+}
+.personal_information .main .camera{
+  width: 40px;
+  height: 40px;
+  background-color: var(--main);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.personal_information .main .accept{
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translate(-50% , 7%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--main);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 222;
+  display: none;
+}
+
+.personal_information .profile-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  /* z-index: 1111; */
+}
 
 
+
+.personal_information .profile-photo input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.personal_information .profile-photo:hover  .add-img {
+  opacity: 1;
+}
+
+.personal_information .main{
+  /* background-color: var(--grey); */
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.personal_information .user-details{
+  width: 100%;
+  text-align: center;
+}
+
+.personal_information .user-details h3 {
+  color: #6D6D6D;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.personal_information .user-details p{
+  color: var(--p-grey);
+  font-size: 1.2rem;
+}
+
+.personal_information form.form{
+  border-radius: 24px;
+  border: 1px solid var(--grey);
+  padding: 4rem 3rem 4rem 1rem;
+}
+
+
+.form-check , .form-switch{
+  padding-right: 0 !important;
+}
+
+.form-check .form-check-label{
+  color: var(--p);
+}
+.form-check-input:checked {
+  background-color: var(--main);
+  border-color: var(--main);
+}
+.form-check-input:focus {
+  box-shadow: unset;
+}
 
 /*==========================================
 ============== policies ====================
@@ -1202,14 +1330,33 @@ footer .item-2 p{
 }
 
 
+.accordion-item{
+  border: none;
+  margin-bottom: 1rem;
+}
+.accordion-button{
+  border-radius: 12px !important;
+  background-color: var(--main) !important;
+  color: var(--white) !important;
+}
+.accordion-button.collapsed{
+  background-color: var(--grey) !important;
+  color: var(--main) !important;
+}
+.accordion-button:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
 
+.accordion-button::after{
+          -webkit-filter: invert(1) brightness(4);
+                  filter: invert(1) brightness(4);
+}
 
-
-
-
-
-
-
+.accordion-button.collapsed::after{
+  -webkit-filter: unset;
+          filter: unset;
+}
 
 
 
@@ -1310,13 +1457,34 @@ footer .footer-container .footer-item{
 .type_article .type_nav .nice-select ,.type_article .type_nav .input-group{
   width: 160px !important;
 }
-
+.card .card-img {
+  height: 350px;
+  min-height: 350px;
+  max-height: 350px;
+}
 
 }
 
 
 
 @media(max-width: 625px){
+  .type_nav .nice-select{
+    width: 50% !important;
+  }
+  .type_nav .nice-select:nth-child(2){
+    width: 50% !important;
+  }
+  .type_article .type_nav .input-group{
+    width: 100% !important;
+  }
+  .card .card-img {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+}
+  .personal_information form.form{
+    padding: 4rem 1rem 4rem 1rem;
+  }
   .profile_nav .item_nav {
     padding: 1.1rem 1.1rem;
 }
@@ -1331,9 +1499,7 @@ footer .footer-container .footer-item{
   .type_article .type_nav .form{
     gap: .8rem;
   }
-  .type_article .type_nav .nice-select ,.type_article .type_nav .input-group{
-    width: 100% !important;
-  }
+
   .navbar-collapse{
     width: 100%;
   }

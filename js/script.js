@@ -55,6 +55,45 @@ if (files.length > 0) {
   });
 }
 
+
+/*============= personal information ==============*/
+
+let profile_photo = document.getElementById('profile-photo');
+let photo = document.getElementById('photo');
+let file = document.getElementById('file');
+let camera_btn = document.getElementById('camera')
+let confirm_btn = document.getElementById('accept')
+
+if( file !=null){
+
+  file.onchange = ()=>{
+    confirm_btn.style.display = 'flex';
+    let choosedFile = file.files[0];
+    if(choosedFile){
+      let reader = new FileReader();
+      reader.onload = ()=>{
+        photo.setAttribute('src' , reader.result);
+      }
+      reader.readAsDataURL(choosedFile);
+    }
+  }
+}
+
+// file.addEventListener("mouseover" , ()=>{
+//   $('.add-img').addClass('active')
+// })
+// file.addEventListener("mouseout" , ()=>{
+//   $('.add-img').removeClass('active')
+// })
+
+if(file != null){
+  camera_btn.onclick = ()=>{
+    file.click();
+  }
+
+}
+
+
 /* ============ single=blog page ============= */
 
 let nav_link = document.querySelectorAll('.nav-link');
