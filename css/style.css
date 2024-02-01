@@ -632,6 +632,11 @@ header .log{
 
 
 /*================ trend ============*/
+.latest .card.about .card-img{
+  height: 250px !important;
+    min-height: 250px !important;
+    max-height: 250px !important;
+}
 .trend .line-break{
   background-color: var(--main) ;
 }
