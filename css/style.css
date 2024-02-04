@@ -601,10 +601,11 @@ header .log{
 .card .card-body p{
   padding: 1rem 0;
   color: var(--p);
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 .card .card-body .card-title{
   padding: 0 !important;
+  font-size: 1.5rem;
 }
 .nav-pills .nav-link{
   color: var(--p);
@@ -614,7 +615,9 @@ header .log{
   background-color: unset !important;
   text-decoration: underline;
 }
-
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
 
 /*=================== suggest ==================*/
 
@@ -1022,24 +1025,17 @@ footer .item-2 p{
   align-items: center;
   gap: 1.4rem;
 }
-.type_article .type_nav .nice-select{
-  border: 1px solid var(--grey);
-  border-radius: 6px;
-  padding: .1rem .5rem;
-  width: 250px !important;
-  display: flex;
-}
 
  .nice-select .list{
   width: 100%;
 }
 
 
-.type_article .type_nav .nice-select{
+ .type_nav .nice-select{
   border: 1px solid var(--grey);
   border-radius: 6px;
   padding: .1rem .5rem;
-  width: 250px !important;
+  width: 250px ;
   display: flex;
 }
 .nice-select{
@@ -1123,7 +1119,24 @@ footer .item-2 p{
   cursor: pointer;
   border-radius: 6px;
 }
-
+.notification::after{
+  content: unset;
+}
+.notification-menu{
+  width: 400px;
+}
+.notification-menu .img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.notification-menu.dropdown-menu::before {
+  left: 1.5rem ;
+  right: unset;
+}
 .notification i{
   position: relative;
 }
@@ -1455,7 +1468,7 @@ footer .footer-container .footer-item{
   gap: .8rem;
 }
 .type_article .type_nav .nice-select ,.type_article .type_nav .input-group{
-  width: 160px !important;
+  width: 160px ;
 }
 .card .card-img {
   height: 350px;
@@ -1469,11 +1482,11 @@ footer .footer-container .footer-item{
 
 @media(max-width: 625px){
   .type_nav .nice-select{
-    width: 50% !important;
+    width: 45% !important;
   }
-  .type_nav .nice-select:nth-child(2){
-    width: 50% !important;
-  }
+  /* .type_nav .nice-select:last-child{
+    width: 45% !important;
+  } */
   .type_article .type_nav .input-group{
     width: 100% !important;
   }
@@ -1516,5 +1529,8 @@ footer .footer-container .footer-item{
 }
 .logo {
   width: 130px;
+}
+.notification-menu {
+  width: 280px;
 }
 }
